@@ -1,0 +1,53 @@
+.container{
+  max-width: 1400px;
+  margin: auto;
+}
+
+header {
+  background-color: rgb(128, 34, 34);
+}
+
+header .logo{
+  margin: 0;
+  padding: 25px 30px; 
+  font-weight: bold;
+  color: rgb(45, 188, 64);
+  font-size: 1.6em;
+}
+
+header .container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+header nav{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+header a{
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(242, 231, 231);
+
+}
+
+header a:hover{
+  color: rgb(45, 188, 64);
+}
+
+@media (min-width: 720px){
+  header .container{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header nav{
+    flex-direction: row;
+    padding-bottom: 0%;
+    padding-right: 20px;
+  }
+}
